@@ -1,0 +1,16 @@
+GET /users - Returns the information of all existing users
+GET /users/{uid} - Returns the information of a user represented by 'uid'
+GET /movies - Returns the information of all existing movies
+GET /movies/{mid} - Returns the information of a movie represented by 'mid'
+GET /movies/{mid}/ratings - Returns the ratings corresponding to inserted parameters of a movie represented by 'mid'
+GET /movies/{mid}/reviews - Returns all reviews of the movie represented by 'mid'
+GET /movies/{mid}/reviews/{rid} - Returns the review represented by 'rid' made by user 'uid'
+GET /users/{uid}/reviews - Returns all reviews made by a user represented by 'uid'
+GET /users/{uid}/reviews/{rid} - Returns all ratings of a movie represented by 'mid'
+GET /tops/ratings - Returns all movies corresponding to inserted parameters
+POST /users - Inserts a new user
+POST /movies - Inserts a new movie
+POST /movies/{mid}/ratings - Inserts a new rating for the movie represented by 'mid'
+POST /movies/{mid}/reviews - Inserts a new review of user represented by 'uid' for the movie represented by 'mid'
+DELETE /movies/{mid}/reviews/{rid} - Deletes a review represented by 'rid' of a movie represented by 'mid'
+EXIT exit application

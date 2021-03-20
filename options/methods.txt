@@ -1,0 +1,15 @@
+GET_/users_GetUsers_Returns the information of all existing users
+GET_/users/{uid}_GetUserById_Returns the information of a user represented by 'uid'
+GET_/movies_GetMovies_Returns the information of all existing movies
+GET_/movies/{mid}_GetMovieById_Returns the information of a movie represented by 'mid'
+GET_/movies/{mid}/ratings_GetRatingsByMovieId_Returns the ratings corresponding to inserted parameters of a movie represented by 'mid'
+GET_/movies/{mid}/reviews_GetReviewsByMovieId_Returns all reviews of the movie represented by 'mid'
+GET_/movies/{mid}/reviews/{rid}_GetCompleteReviewByMovieById_Returns the review represented by 'rid' made by user 'uid'
+GET_/users/{uid}/reviews_GetReviewsByUserId_Returns all reviews made by a user represented by 'uid'
+GET_/users/{uid}/reviews/{rid}_GetCompleteReviewByUserById_Returns all ratings of a movie represented by 'mid'
+GET_/tops/ratings_GetMoviesList_Returns all movies corresponding to inserted parameters
+POST_/users_PostUsers_Inserts a new user
+POST_/movies_PostMovies_Inserts a new movie
+POST_/movies/{mid}/ratings_PostRatingByMovieId_Inserts a new rating for the movie represented by 'mid'
+POST_/movies/{mid}/reviews_PostReviewByMovieId_Inserts a new review of user represented by 'uid' for the movie represented by 'mid'
+DELETE_/movies/{mid}/reviews/{rid}_DeleteReviewIdByMovieId_Deletes a review represented by 'rid' of a movie represented by 'mid'
